@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+<!-- So that mobile webkit will display zoomed in -->
+<meta name="format-detection" content="telephone=no">
+<!-- disable auto telephone linking in iOS -->
+<title>{{orders.0.sellers.0.name}}</title>
+<style type="text/css">
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {padding:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 100% !important;
+            }
+        }
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            .status{padding-bottom:0px;}
+        }
+        /* Styles for forcing columns to rows */
+        @media only screen and (max-width : 600px) {
+            /* force container columns to (horizontal) blocks */
+            .container{border-radius:0 !important;}
+            .no-padding-top-bottom-mobile{padding-top:0;padding-bottom:0;padding:0 !important;}
+            .img-product{width:70px;}
+            .side-border td{padding-left:0;}
+            .button{padding:11px 0 !important;font-size:13px;width:100%;}
+            .table-button{width:100% !important;}
+            td[class="force-col"] {
+                display: block;
+                padding-right: 0 !important;
+            }
+            table[class="col-3"] {
+                /* unset table align="left/right" */
+                float: none !important;
+                width: 100% !important;
+                /* change left/right padding and margins to top/bottom ones */
+                padding-bottom: 12px;
+                border-bottom: 1px solid #eee;
+            }
+            /* remove bottom border for last column/row */
+            table[id="last-col-3"] {
+                border-bottom: none !important;
+            }
+            /* align images right and shrink them a bit */
+            img[class="col-3-img"] {
+                float: right;
+                margin-left: 6px;
+                max-width: 130px;
+            }
+        }
+        @media only screen and (max-width : 800px) {
+            .status{width:100% !important;}
+            .status div{width:200px !important;}
+        }
+        
+           a:link { 
+            text-decoration:none; 
+            color:#000;
+            } 
+</style>
+</head>
+<body marginwidth="0" marginheight="0" bgcolor="#fff" style="padding: 0px 0px; color: #333;" leftmargin="0" topmargin="0">
+    <!-- 100% wrapper (grey background) -->
+    <table width="100%" cellspacing="4" border="0" bgcolor="#fff">
+        <tbody>
+            <tr>
+                <td valign="top" bgcolor="#fff" align="center" class="no-padding-top-bottom-mobile" style="background-color: #fff; color: #333;">
+                    <!-- 600px container (white background) -->
+                    <table cellspacing="4" cellpadding="0" border="0" bgcolor="#fff" class="container" style="max-width: 600px;">
+                        <tbody>
+                            <tr>
+                                <td bgcolor="#ffffff" align="left" class="container-padding" style="background-color: #ffffff; padding-left: 10px; padding-right: 3px; font-size: 13px; line-height: 19px; font-family: Helvetica, sans-serif; color: #333;">
+                                    <br />
+                                    <table width="100%" cellspacing="4" cellpadding="0" border="0" class="columns-container">
+                                        <tbody>
+                                            <tr>
+                                                <td class="force-col" style="padding-right: 0px;">
+                                                    <table width="100%" cellspacing="3" cellpadding="0" border="0" align="left" style="border-bottom:1px solid #ccc;" class="col-3">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left;">
+                                                                    <td align="center" style="">
+                                                                    <a href="http://www.tiendasel.com"><img height="100px" border="0" width="auto" style="border:none;border-left:0px;border-right:0px;" alt="{{_accountInfo.TradingName}}" src="https://qatiendasel.vteximg.com.br/arquivos/header_Nm_TE.png" class="img-logo"></a>
+                                                                </td>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="force-col">
+                                                    <!-- ### BEGIN CONTENT ### -->
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="left" style="padding-bottom:0;margin-bottom:0;" class="col-3">
+                                                        <tbody>
+                                                            <tr>
+                                                                   <td align="center">
+                                                                  <div class="padding10" style="column-count: 2; margin:20px 0px">
+        <div class="center">
+            <img src="https://qatiendasel.vteximg.com.br/arquivos/I_CanPed.png" alt="" style="height: 105px;">
+        </div>
+
+        <div class="left">
+            <span style="font-size:15px;font-family: Helvetica, sans-serif; ">Hola, <strong>{{clientProfileData.firstName}} {{#if orders}}
+  {{#if orders.0.clientProfileData.firstName}}
+    {{#compare orders.0.clientProfileData.firstName '!=' 'isAnonymous'}}
+      {{orders.0.clientProfileData.firstName}}
+    {{/compare}}
+  {{/if}}
+{{else}}
+  {{#if clientProfileData.firstName}}
+    {{#compare clientProfileData.firstName '!=' 'isAnonymous'}}
+     <!-- Hola{clientProfileData.firstName}}-->
+    {{/compare}}
+  {{/if}}
+{{/if}}</strong>.</span>
+            <br>
+            <div style="padding-top: 3px; padding-bottom: 0px; font-size: 20px; font-family: Helvetica, sans-serif; line-height: 40px;"><strong>!Cancelaste tu pedido!</strong></div>
+            <div style="padding-top: 3px; padding-bottom: 0px; font-size: 12px; font-family: Helvetica, sans-serif; line-height: 40px;"><strong>Realizado el:  {{formatDate creationDate}}</strong></div>
+
+        </div>
+
+
+    </div>
+                                                                   
+                                                                   
+                                                                </td>
+                                                            </tr>                                             
+                                                        </tbody>
+                                                    </table>
+
+                                                    <!-- TABELA DE DETALHE DA ORDER -->
+                                                    <table width="100%" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                 <td style="padding:10px; background:#f2f2f2;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;">
+                                                                    <table align="center" style="padding-bottom:0px;padding-top:10px; ">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div style="line-height:20px" align="center">
+                                                                                        <strong style="font-size:20px; color:#000;">Pedido nº <span style="font-size:20px;display:inline-block;">{{orderId}}</span></strong>
+                                                                                    </div>
+                                                                                    <div align="center" style="line-height:20px font-size:20px;color:#000;">Suministrado y entregado por <strong style="display:inline-block;font-size:2'px"><span>{{sellers.0.name}}</span></strong></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                          <!--    <tr>
+                                                                <td style="background-color:#fff;padding-left:10px;  ">
+                                                                    <table style="padding-bottom:0px;padding-top:5px;">
+                                                                        <tbody>
+                                                                            <tr>
+                    															<td>
+                                                                                    <div class="status" style="vertical-align:top;display:inline-block;padding-right:5px;padding-top:0px;">
+																					  	<strong style="vertical-align:top;font-size:16px;color:#DF0101;">X</strong>
+																						<div style="display:inline-block;line-height:16px;font-size:10px;color:#BBB;padding-left:3px;width:120px;">
+																						<strong style="font-size:14px;color:#DF0101;">PEDIDO CANCELADO</strong>
+																						</div>
+                                                                                         
+																					</div>
+                                                                                    
+													 							</td>
+											 								</tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>-->
+                                                            <tr>
+                                                                <td style="padding-bottom:0;border-top:1px solid #ccc; border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;">
+                                                                    {{#each items}}
+                                                                    <table width="100%" style="border-bottom:1px solid #EEE;padding-top:5px;padding-bottom:5px;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding-left:10px;">
+                                                                                  <img src="{{imageUrl}}" style="height:50px; border:1px solid #ccc;"></br>
+                                                                                    <span style="">{{name}}</span>
+                                                                                    <table cellpadding="5" align="right" style="padding-top:5px;">
+                                                                                        <tbody><tr>
+                                                                                            <td style="padding-left:0;padding-bottom:0;padding-top:0;">
+                                                                                                <span>{{quantity}}x S/ {{formatCurrency sellingPrice}}</span><br>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    {{/each}}
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                   
+                                                    
+                                                    <!-- CARD DE CHANGE-->
+                                                    {{#if changeData}}
+                                                    {{#each changeData.changesData}}
+                                                    <table width="100%" cellspacing="0" border="0">
+                                                        
+                                                        <tbody>
+
+                                                            <!-- TÍTULO -->
+                                                            <tr>
+                                                                <td style="background-color:#fff;padding-left:10px;">
+                                                                    <table align="left" style="padding-bottom:0px;padding-top:10px;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <strong style="font-size:14px;">Cambio en la Solicitud</strong>
+                                                                                        <span> - {{reason}}</span>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        Valor de descuento - S/ -{{ formatCurrency discountValue }}
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- ITENS REMOVIDOS -->
+                                                            <tr>
+                                                                <td style="padding-bottom:0;">
+
+                                                                    {{#each itemsAdded}}
+                                                                    <table width="100%" style="border:1px solid #000;padding-top:5px;padding-bottom:5px;">
+                                                                        
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding-left:10px;">
+                                                                                    <span style="font-size:12px;">Producto Agregado (+)</span><br>
+                                                                                    <span>{{name}}</span>
+                                                                                    <table cellpadding="5" align="right" style="padding-top:5px;">
+                                                                                        <tbody><tr>
+                                                                                            <td style="padding-left:0;padding-bottom:0;padding-top:0;">
+                                                                                                <span>{{quantity}}x S/ {{formatCurrency price}}</span><br>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    {{/each}}
+                                                                    {{#each itemsRemoved}}
+                                                                    <table width="100%" style="border-top:1px solid #000;padding-top:5px;padding-bottom:5px;">
+                                                                        
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding-left:10px;">
+                                                                                    <span style="font-size:12px;">Producto Removido (-)</span><br>
+                                                                                    <span>{{name}}</span>
+                                                                                    <table cellpadding="5" align="right" style="padding-top:5px;">
+                                                                                        <tbody><tr>
+                                                                                            <td style="padding-left:0;padding-bottom:0;padding-top:0;">
+                                                                                                <span>{{quantity}}x S/. {{formatCurrency price}}</span><br>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    {{/each}}
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                        
+                                                    </table>
+                                                 
+                                                    {{/each}}
+                                                    {{/if}}
+                                                    
+                                                    <!-- TABELA DE TOTALIZADORES DA ORDER --> 
+                                                    <table cellspacing="0" cellpadding="4" border="0" align="right" style="margin-bottom:15px;border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;border-left: 1px solid #ccc;padding-top:7px;padding-bottom:7px;padding-left:7px;padding-right:7px;" bgcolor="#fff">
+                                                        <tbody>
+                                                            {{#each totals}}
+                                                            {{#if value}}
+                                                            <tr>
+                                                                <td valign="top" align="right" style="color:#000;">
+                                                                    {{#eq id "Items"}}Sub Total{{/eq}}
+                                                                    {{#eq id "Shipping"}}Entrega{{/eq}}
+                                                                    {{#eq id "Discounts"}}Descontos{{/eq}}
+                                                                    {{#eq id "Tax"}}Taxas{{/eq}}
+                                                                    {{#eq id "Change"}}Alterações{{/eq}}
+                                                                </td>
+                                                                <td valign="top" align="right" style="text-align:left;">
+                                                                    S/ {{formatCurrency value}}
+                                                                </td>
+                                                            </tr>
+                                                            {{/if}}
+                                                            {{/each}}
+                                                            {{#if value}}
+                                                            <tr>
+                                                                <td valign="top" align="right" style="color:#000; font-weight:bold;font-size:20px">
+                                                                    Total
+                                                                </td>
+                                                                <td valign="top" align="right" style="text-align:left;">
+                                                                    S/ {{formatCurrency value}}
+                                                                </td>
+                                                            </tr>
+                                                            {{/if}}
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>
+                                                   <br>
+                                                    <strong>Atentamente,</strong>
+                                                    <br>
+                                                    <strong>{{_accountInfo.TradingName}}</strong>.
+                                                    <br>
+                                                    <br>
+                                                </td>
+                                            </tr> 
+                                            
+                                          
+                                                     <div style="padding:20px;background:#f2f2f2;color:#000;text-align: center;">
+    <table width="100%" align="center" style="background:#f2f2f2;color:#000;text-align: center;">
+    <tbody>
+        <tr>
+            <!-- <td>
+                                                            <div style="text-align:center;">
+                                                                Copyright Tiendas {{_accountInfo.TradingName}}
+                                                            </div>
+                                                        </td>-->
+
+            
+            <td>
+            <a href="https://www.facebook.com/TiendasEl" target="_blank"><img src="https://qatiendasel.vteximg.com.br/arquivos/Footer_TE_03.jpg" alt=""></a>
+               
+            </td>
+
+            <td>
+                <a href="https://www.instagram.com/tiendasel" target="_blank"> <img src="https://qatiendasel.vteximg.com.br/arquivos/Footer_TE_04.jpg" alt="">
+            </td>
+
+            <td>
+                <a href="http://www.tiendasel.com" target="_blank"> <img src="https://qatiendasel.vteximg.com.br/arquivos/Footer_TE_05.jpg" alt="">
+            </td>
+        </tr>
+    </tbody>
+    <tr>
+       
+    </tr>
+
+
+</table>
+<table width="100%" align="center" style="background:#f2f2f2;color:#000;text-align: center;padding: 10px 0px;">
+    <tbody>
+        <tr>
+           <td> Llamanos al <strong> <a href="tel:+51012137272" style="color:#000;">213-7272</a></strong> o escribenos a <strong style="font-weight: bold;color: #000;"><a href="mailto:servicioalcliente@tiendasel.com" style="color:#000;">servicioalcliente@tiendasel.com</a></strong></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+                                    </table>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<!--/600px container -->
+<!--/100% wrapper-->
+</body>
+</html>
